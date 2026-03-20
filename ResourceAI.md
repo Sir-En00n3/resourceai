@@ -1,0 +1,1 @@
+A cross-platform application that utilies modern technologies to successfuly navigte public assistance and/or safety-net programs designed to support individuals with basic needs during financial hardship.
