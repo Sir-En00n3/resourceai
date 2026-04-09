@@ -1,10 +1,12 @@
-import { JSX } from "react";
+import {JSX} from "react";
 import HomeBtn from "@/components/HomeBtn";
+import SignUp from "@/components/SignUp";
+
 
 export default function Page(): JSX.Element {
   return (
     <>
-      <div className="relative flex flex-col justify-center items-center text-center w-full h-full bg-mybg">
+      <div className="relative flex flex-col justify-center items-center text-center bg-mybg">
         <header className="relative flex flex-row justify-center items-center text-center w-full height-15% border-4 border-solid border-myacc">
           <div className="relative flex flex-col justify-center items-start text-center w-1/4 h-full p-1">
             <HomeBtn />
@@ -17,6 +19,9 @@ export default function Page(): JSX.Element {
 
           <div className="relative flex flex-col justify-center items-center text-center w-1/4 h-full p-1"></div>
         </header>
+        <div className="relative flex flex-col justify-center items-center bg-white w-full h-full">
+          <SignUp />
+        </div>
       </div>
     </>
   );

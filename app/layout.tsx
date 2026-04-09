@@ -1,12 +1,14 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono, Open_Sans } from "next/font/google";
+import type {Metadata} from "next";
+import {Geist, Geist_Mono, Open_Sans} from "next/font/google";
 import "./globals.css";
 import React from "react";
+import NavBar from "@/components/NavBar";
+
 
 const openSans = Open_Sans({
   variable: "--font-open-sans",
   subsets: ["latin"],
-  weight: ["300", "800"]
+  weight: "variable"
 })
 
 const geistSans = Geist({
@@ -34,7 +36,14 @@ export default function RootLayout({
       lang="en"
       className={`${openSans.className} ${geistSans.variable} ${geistMono.variable} antialiased`}
     >
-      <body>{children}</body>
+      <body>
+        <NavBar />
+        
+        <main>
+          {children}
+        </main>
+        <footer></footer>
+      </body>
     </html>
   );
 }
